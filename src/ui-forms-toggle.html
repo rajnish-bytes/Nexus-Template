@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Toggle</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Forms</li>
+                                    <li class="opacity-80">Toggle</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Default</div>
+                                    <div class="mt-4 flex flex-wrap gap-4">
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle"
+                                            type="checkbox" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            disabled=""
+                                            class="toggle"
+                                            type="checkbox" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            disabled=""
+                                            class="toggle"
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Color</div>
+                                    <div class="mt-4 flex flex-wrap gap-4">
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-primary"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-secondary"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-accent"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-success"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-info"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-warning"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-error"
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Size</div>
+                                    <div class="mt-4 flex flex-wrap items-center gap-4">
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-xs"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-sm"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-lg"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle toggle-xl"
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Icon</div>
+                                    <div class="mt-4 flex flex-wrap items-center gap-4">
+                                        <label class="toggle text-base-content toggle-xl">
+                                            <input aria-label="Checkbox" type="checkbox" />
+                                            <span
+                                                class="iconify lucide--x m-1 flex size-3.5 items-center"
+                                                aria-label="disabled"></span>
+                                            <span
+                                                class="iconify lucide--check m-1 flex size-3.5 items-center"
+                                                aria-label="enabled"></span>
+                                        </label>
+                                        <label class="toggle text-base-content toggle-xl">
+                                            <input aria-label="Checkbox" type="checkbox" />
+                                            <span
+                                                class="iconify lucide--sun m-1 flex size-3.5 items-center"
+                                                aria-label="disabled"></span>
+                                            <span
+                                                class="iconify lucide--moon m-1 flex size-3.5 items-center"
+                                                aria-label="enabled"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Custom</div>
+                                    <div class="mt-4 flex flex-wrap items-center gap-4">
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle border-orange-300 bg-orange-200 text-orange-600 checked:border-orange-600 checked:bg-orange-600 checked:text-white"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox"
+                                            class="toggle border-blue-300 bg-linear-to-br from-blue-300 to-purple-300 text-blue-800 checked:border-blue-500 checked:from-blue-500 checked:to-purple-500 checked:text-white"
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

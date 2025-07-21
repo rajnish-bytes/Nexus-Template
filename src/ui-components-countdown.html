@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Countdown</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Components</li>
+                                    <li class="opacity-80">Countdown</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                                <div class="bg-base-100 card card-border">
+                                    <div class="card-body">
+                                        <div class="card-title">Default</div>
+                                        <div class="mt-4">
+                                            <span class="countdown">
+                                                <span
+                                                    class="countdown-timer"
+                                                    style="--value: 59"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-base-100 card card-border">
+                                    <div class="card-body">
+                                        <div class="card-title">Clock</div>
+                                        <div class="mt-4 flex flex-wrap items-center gap-2">
+                                            <span class="countdown">
+                                                <span style="--value: 10"></span>
+                                            </span>
+                                            <span>:</span>
+                                            <span class="countdown">
+                                                <span style="--value: 24"></span>
+                                            </span>
+                                            <span>:</span>
+                                            <span class="countdown">
+                                                <span
+                                                    class="countdown-timer"
+                                                    style="--value: 59"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-base-100 card card-border">
+                                    <div class="card-body">
+                                        <div class="card-title">Label</div>
+                                        <div class="mt-4 flex flex-wrap gap-5 text-center">
+                                            <div class="flex flex-col">
+                                                <span class="countdown text-xl md:text-5xl">
+                                                    <span style="--value: 15"></span>
+                                                </span>
+                                                Days
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <span class="countdown text-xl md:text-5xl">
+                                                    <span style="--value: 10"></span>
+                                                </span>
+                                                Hours
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <span class="countdown text-xl md:text-5xl">
+                                                    <span style="--value: 24"></span>
+                                                </span>
+                                                Minutes
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <span class="countdown text-xl md:text-5xl">
+                                                    <span
+                                                        class="countdown-timer"
+                                                        style="--value: 59"></span>
+                                                </span>
+                                                Seconds
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-base-100 card card-border">
+                                    <div class="card-body">
+                                        <div class="card-title">Boxed</div>
+                                        <div class="mt-4 flex flex-wrap gap-3 text-center md:gap-5">
+                                            <div
+                                                class="bg-base-200 rounded-box flex flex-col items-center gap-1 p-3 text-sm">
+                                                <span class="countdown text-xl md:text-3xl">
+                                                    <span style="--value: 15"></span>
+                                                </span>
+                                                Days
+                                            </div>
+                                            <div
+                                                class="bg-base-200 rounded-box flex flex-col items-center gap-1 p-3 text-sm">
+                                                <span class="countdown text-xl md:text-3xl">
+                                                    <span style="--value: 10"></span>
+                                                </span>
+                                                Hours
+                                            </div>
+                                            <div
+                                                class="bg-base-200 rounded-box flex flex-col items-center gap-1 p-3 text-sm">
+                                                <span class="countdown text-xl md:text-3xl">
+                                                    <span style="--value: 24"></span>
+                                                </span>
+                                                Minutes
+                                            </div>
+                                            <div
+                                                class="bg-base-200 rounded-box flex flex-col items-center gap-1 p-3 text-sm">
+                                                <span class="countdown text-xl md:text-3xl">
+                                                    <span
+                                                        class="countdown-timer"
+                                                        style="--value: 59"></span>
+                                                </span>
+                                                Seconds
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <script>
+            let value = 59
+
+            const updateCountdown = () => {
+                const countdownTimers = document.querySelectorAll(".countdown-timer")
+                countdownTimers.forEach((span) => {
+                    span.style.setProperty("--value", value)
+                })
+                value = value <= 0 ? 59 : value - 1
+            }
+
+            setInterval(updateCountdown, 1000)
+        </script>
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

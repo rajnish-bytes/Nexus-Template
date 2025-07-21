@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Breadcrumb</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Components</li>
+                                    <li class="opacity-80">Breadcrumb</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+                            <div class="bg-base-100 card card-border">
+                                <div class="card-body">
+                                    <div class="card-title">Default</div>
+                                    <div class="breadcrumbs mt-2 text-sm">
+                                        <ul>
+                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#shops">Shops</a></li>
+                                            <li>Add Shop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-base-100 card card-border">
+                                <div class="card-body">
+                                    <div class="card-title">Icon</div>
+                                    <div class="breadcrumbs mt-2 text-sm">
+                                        <ul>
+                                            <li>
+                                                <a href="#home">
+                                                    <span class="iconify lucide--home"></span>
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#shops">
+                                                    <span class="iconify lucide--store"></span>
+                                                    Shops
+                                                </a>
+                                            </li>
+                                            <li>Add Shop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-base-100 card card-border">
+                                <div class="card-body">
+                                    <div class="card-title">Dropdown</div>
+                                    <div class="breadcrumbs mt-2 overflow-x-visible text-sm">
+                                        <ul>
+                                            <li>
+                                                <a href="#home">
+                                                    <span class="iconify lucide--home"></span>
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <details
+                                                    class="dropdown dropdown-center dropdown-bottom">
+                                                    <summary
+                                                        class="btn btn-xs hover:no-undeline mx-1">
+                                                        •••
+                                                    </summary>
+                                                    <ul
+                                                        class="menu dropdown-content bg-base-100 rounded-box z-1 w-32 p-2 shadow-sm">
+                                                        <li>
+                                                            <a href="#store">
+                                                                <span
+                                                                    class="iconify lucide--store"></span>
+                                                                Stores
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#users">
+                                                                <span
+                                                                    class="iconify lucide--users"></span>
+                                                                Users
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li>Add Shop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

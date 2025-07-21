@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Range</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Forms</li>
+                                    <li class="opacity-80">Range</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Default</div>
+                                    <div class="mt-4 flex flex-col gap-4">
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range"
+                                            type="range"
+                                            value="80" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range"
+                                            disabled=""
+                                            type="range"
+                                            value="80" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Step</div>
+                                    <div class="mt-4">
+                                        <div class="w-full max-w-xs">
+                                            <input
+                                                aria-label="Range"
+                                                min="0"
+                                                max="100"
+                                                class="range"
+                                                step="25"
+                                                type="range"
+                                                value="25" />
+                                            <div class="mt-2 flex justify-between px-2.5 text-xs">
+                                                <span>|</span>
+                                                <span>|</span>
+                                                <span>|</span>
+                                                <span>|</span>
+                                                <span>|</span>
+                                            </div>
+                                            <div class="mt-2 flex justify-between px-2.5 text-xs">
+                                                <span>1</span>
+                                                <span>2</span>
+                                                <span>3</span>
+                                                <span>4</span>
+                                                <span>5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Color</div>
+                                    <div class="mt-4 flex flex-col gap-3">
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-primary"
+                                            type="range"
+                                            value="45" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-secondary"
+                                            type="range"
+                                            value="45" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-accent"
+                                            type="range"
+                                            value="45" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-success"
+                                            type="range"
+                                            value="45" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-info"
+                                            type="range"
+                                            value="45" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-warning"
+                                            type="range"
+                                            value="45" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-error"
+                                            type="range"
+                                            value="45" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Size</div>
+                                    <div class="mt-4 flex flex-col gap-4">
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-xs"
+                                            type="range"
+                                            value="55" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-sm"
+                                            type="range"
+                                            value="55" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range"
+                                            type="range"
+                                            value="55" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-lg"
+                                            type="range"
+                                            value="55" />
+                                        <input
+                                            aria-label="Range"
+                                            min="0"
+                                            max="100"
+                                            class="range range-xl"
+                                            type="range"
+                                            value="55" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

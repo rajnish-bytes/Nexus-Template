@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Column Charts</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Apex Charts</li>
+                                    <li class="opacity-80">Column</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 gap-6 xl:grid-cols-2">
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body gap-3 pb-0">
+                                    <div class="card-title">Stacked Column</div>
+                                    <div id="stacked-column-chart"></div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body gap-3 pb-0">
+                                    <div class="card-title">Dumbbell Column</div>
+                                    <div id="dumbbell-column-chart"></div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body gap-3 pb-0">
+                                    <div class="card-title">Range Column</div>
+                                    <div id="range-column-chart"></div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body gap-3 pb-0">
+                                    <div class="card-title">Negative Values Column</div>
+                                    <div id="negative-value-column-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.3.0/apexcharts.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.3.0/apexcharts.min.js"></script>
+
+        <script src="/js/pages/charts/apex-column.js"></script>
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

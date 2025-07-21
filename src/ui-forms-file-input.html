@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">File Input</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Forms</li>
+                                    <li class="opacity-80">File Input</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Default</div>
+                                    <div class="mt-4 flex flex-col gap-4">
+                                        <input aria-label="File" class="file-input" type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input"
+                                            disabled=""
+                                            type="file" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Ghost</div>
+                                    <div class="mt-4 flex flex-col gap-4">
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-ghost"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-ghost"
+                                            disabled=""
+                                            type="file" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="card card-border bg-base-100">
+                                    <div class="card-body">
+                                        <div class="card-title">Fieldset</div>
+                                        <div class="mt-1">
+                                            <fieldset class="fieldset gap-1">
+                                                <legend class="fieldset-legend">Pick a file</legend>
+                                                <input
+                                                    aria-label="File"
+                                                    class="file-input"
+                                                    type="file" />
+                                                <span class="fieldset-label">Max size 2MB</span>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-border bg-base-100">
+                                    <div class="card-body">
+                                        <div class="card-title">Size</div>
+                                        <div class="mt-4 flex flex-col gap-3">
+                                            <input
+                                                aria-label="File"
+                                                class="file-input file-input-xs"
+                                                type="file" />
+                                            <input
+                                                aria-label="File"
+                                                class="file-input file-input-sm"
+                                                type="file" />
+                                            <input
+                                                aria-label="File"
+                                                class="file-input"
+                                                type="file" />
+                                            <input
+                                                aria-label="File"
+                                                class="file-input file-input-lg"
+                                                type="file" />
+                                            <input
+                                                aria-label="File"
+                                                class="file-input file-input-xl"
+                                                type="file" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Color</div>
+                                    <div class="mt-4 flex flex-col gap-3">
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-primary"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-secondary"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-accent"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-success"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-info"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-warning"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-error"
+                                            type="file" />
+                                        <input
+                                            aria-label="File"
+                                            class="file-input file-input-neutral"
+                                            type="file" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

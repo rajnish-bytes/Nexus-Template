@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Progress</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Components</li>
+                                    <li class="opacity-80">Progress</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Default</div>
+                                    <div class="mt-4 flex flex-col gap-y-3">
+                                        <progress
+                                            class="progress w-56"
+                                            value="0"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress w-56"
+                                            value="15"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress w-56"
+                                            value="30"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress w-56"
+                                            value="40"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress w-56"
+                                            value="75"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress w-56"
+                                            value="100"
+                                            max="100"></progress>
+                                        <progress class="progress w-56"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Color</div>
+                                    <div class="mt-4 flex flex-col gap-y-3">
+                                        <progress
+                                            class="progress progress-primary w-56"
+                                            value="20"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress progress-secondary w-56"
+                                            value="30"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress progress-accent w-56"
+                                            value="40"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress progress-success w-56"
+                                            value="50"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress progress-info w-56"
+                                            value="60"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress progress-warning w-56"
+                                            value="70"
+                                            max="100"></progress>
+                                        <progress
+                                            class="progress progress-error w-56"
+                                            value="80"
+                                            max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Radial</div>
+                                    <div class="mt-4 flex flex-wrap gap-4">
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress"
+                                            aria-valuenow="20"
+                                            role="progressbar"
+                                            style="--value: 20; --thickness: 4px; --size: 4rem">
+                                            20%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress"
+                                            aria-valuenow="40"
+                                            role="progressbar"
+                                            style="--value: 40; --thickness: 4px; --size: 4rem">
+                                            40%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress"
+                                            aria-valuenow="60"
+                                            role="progressbar"
+                                            style="--value: 60; --thickness: 4px; --size: 4rem">
+                                            60%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress"
+                                            aria-valuenow="95"
+                                            role="progressbar"
+                                            style="--value: 95; --thickness: 4px; --size: 4rem">
+                                            95%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Radial: Size</div>
+                                    <div class="mt-4 flex gap-4">
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-xs"
+                                            aria-valuenow="75"
+                                            role="progressbar"
+                                            style="--value: 75; --thickness: 2px; --size: 2rem">
+                                            75%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-sm"
+                                            aria-valuenow="75"
+                                            role="progressbar"
+                                            style="--value: 75; --thickness: 3px; --size: 3rem">
+                                            75%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress"
+                                            aria-valuenow="75"
+                                            role="progressbar"
+                                            style="--value: 75; --thickness: 4px; --size: 4rem">
+                                            75%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress"
+                                            aria-valuenow="75"
+                                            role="progressbar"
+                                            style="--value: 75; --thickness: 5px; --size: 5rem">
+                                            75%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Radial: Color</div>
+                                    <div class="mt-4 flex flex-wrap gap-4">
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-primary"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-secondary"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-accent"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-success"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-info"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-warning"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-error"
+                                            aria-valuenow="80"
+                                            role="progressbar"
+                                            style="--value: 80; --thickness: 4px; --size: 4rem">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Radial: Soft</div>
+                                    <div class="mt-4 flex flex-wrap gap-4">
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-primary outline-primary/15 outline-4 -outline-offset-4"
+                                            aria-valuenow="65"
+                                            role="progressbar"
+                                            style="--value: 65; --thickness: 4px; --size: 4rem">
+                                            65%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-secondary outline-secondary/15 outline-4 -outline-offset-4"
+                                            aria-valuenow="65"
+                                            role="progressbar"
+                                            style="--value: 65; --thickness: 4px; --size: 4rem">
+                                            65%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-accent outline-accent/15 outline-4 -outline-offset-4"
+                                            aria-valuenow="65"
+                                            role="progressbar"
+                                            style="--value: 65; --thickness: 4px; --size: 4rem">
+                                            65%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-success outline-success/15 outline-4 -outline-offset-4"
+                                            aria-valuenow="65"
+                                            role="progressbar"
+                                            style="--value: 65; --thickness: 4px; --size: 4rem">
+                                            65%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-info outline-info/15 outline-4 -outline-offset-4"
+                                            aria-valuenow="65"
+                                            role="progressbar"
+                                            style="--value: 65; --thickness: 4px; --size: 4rem">
+                                            65%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-warning outline-warning/15 outline-4 -outline-offset-4"
+                                            aria-valuenow="65"
+                                            role="progressbar"
+                                            style="--value: 65; --thickness: 4px; --size: 4rem">
+                                            65%
+                                        </div>
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress text-error outline-error/15 outline-4 -outline-offset-4"
+                                            aria-valuenow="65"
+                                            role="progressbar"
+                                            style="--value: 65; --thickness: 4px; --size: 4rem">
+                                            65%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Background</div>
+                                    <div class="mt-4 flex gap-4">
+                                        <div
+                                            aria-label="Radial progress"
+                                            class="radial-progress border-primary bg-primary text-primary-content border-4"
+                                            aria-valuenow="75"
+                                            role="progressbar"
+                                            style="--value: 75; --thickness: 4px; --size: 4rem">
+                                            75%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

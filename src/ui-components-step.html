@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Step</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Components</li>
+                                    <li class="opacity-80">Step</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
+                            <div class="card card-border bg-base-100 overflow-auto">
+                                <div class="card-body">
+                                    <div class="card-title">Default</div>
+                                    <div class="mt-4 overflow-auto">
+                                        <ul class="steps">
+                                            <li class="step step-primary">Register</li>
+                                            <li class="step step-primary">Choose plan</li>
+                                            <li class="step">Purchase</li>
+                                            <li class="step">Receive Product</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100 overflow-auto">
+                                <div class="card-body">
+                                    <div class="card-title">Responsive</div>
+                                    <div class="mt-4 overflow-auto">
+                                        <ul class="steps steps-vertical lg:steps-horizontal">
+                                            <li class="step step-primary">Register</li>
+                                            <li class="step step-primary">Choose plan</li>
+                                            <li class="step">Purchase</li>
+                                            <li class="step">Receive Product</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100 overflow-auto">
+                                <div class="card-body">
+                                    <div class="card-title">Icon</div>
+                                    <div class="mt-4 overflow-auto">
+                                        <ul class="steps">
+                                            <li data-content="?" class="step">Step 1</li>
+                                            <li data-content="!" class="step">Step 2</li>
+                                            <li data-content="✓" class="step">Step 3</li>
+                                            <li data-content="✕" class="step">Step 4</li>
+                                            <li data-content="★" class="step">Step 5</li>
+                                            <li data-content="" class="step">Step 6</li>
+                                            <li data-content="●" class="step">Step 7</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100 overflow-auto">
+                                <div class="card-body">
+                                    <div class="card-title">Color</div>
+                                    <div class="mt-4 overflow-auto">
+                                        <ul class="steps">
+                                            <li class="step step-info">Travel to Mars</li>
+                                            <li class="step step-info">Establish a base</li>
+                                            <li class="step step-info">Collect samples</li>
+                                            <li class="step step-error" data-content="?">
+                                                Return safely
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <load src="partials/footer.html" />
+    </body>
+</html>

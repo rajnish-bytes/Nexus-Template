@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" class="group/html">
+    <head>
+        <title>Nexus (HTML - DaisyUI)</title>
+
+        <load src="partials/head.html" />
+    </head>
+
+    <body>
+        <!--  Start: Layout - Main -->
+
+        <div class="size-full" id="layout-main">
+            <div class="flex">
+                <load src="partials/sidebar.html" />
+
+                <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
+                    <load src="partials/topbar.html" />
+
+                    <!--  Start: Layout - Content -->
+
+                    <div id="layout-content">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium">Checkbox</h3>
+                            <div class="breadcrumbs hidden p-0 text-sm sm:inline">
+                                <ul>
+                                    <li><a href="./dashboards-ecommerce.html">Nexus</a></li>
+                                    <li class="">Forms</li>
+                                    <li class="opacity-80">Checkbox</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Default</div>
+                                    <div class="mt-4 flex flex-wrap gap-3">
+                                        <input
+                                            class="checkbox"
+                                            aria-label="Checkbox example"
+                                            type="checkbox" />
+                                        <input
+                                            class="checkbox"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox"
+                                            aria-label="Checkbox example"
+                                            disabled=""
+                                            type="checkbox" />
+                                        <input
+                                            class="checkbox"
+                                            aria-label="Checkbox example"
+                                            disabled=""
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Color</div>
+                                    <div class="mt-4 flex flex-wrap gap-3">
+                                        <input
+                                            class="checkbox checkbox-primary"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-secondary"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-accent"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-success"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-info"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-warning"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-error"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Size</div>
+                                    <div class="mt-4 flex flex-wrap items-center gap-3">
+                                        <input
+                                            class="checkbox checkbox-xl"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-lg"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-sm"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            class="checkbox checkbox-xs"
+                                            aria-label="Checkbox example"
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Form Control</div>
+                                    <form
+                                        class="form-control bg-base-200 rounded-box mt-4 w-64 p-3 px-4">
+                                        <label class="label flex">
+                                            <span class="label-text grow cursor-pointer">
+                                                Remember me
+                                            </span>
+                                            <input class="checkbox" type="checkbox" />
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Indeterminate</div>
+                                    <div class="mt-4">
+                                        <div class="flex flex-wrap gap-3">
+                                            <input
+                                                class="checkbox"
+                                                id="indeterminate-checkbox"
+                                                aria-label="Checkbox example"
+                                                type="checkbox" />
+                                            <input
+                                                disabled=""
+                                                class="checkbox"
+                                                id="indeterminate-checkbox-disabled"
+                                                aria-label="Checkbox example"
+                                                type="checkbox" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-border bg-base-100">
+                                <div class="card-body">
+                                    <div class="card-title">Custom</div>
+                                    <div class="mt-4 flex flex-wrap gap-3">
+                                        <input
+                                            aria-label="Checkbox example"
+                                            class="checkbox border-red-300 bg-red-100 text-red-600 checked:border-red-600 checked:bg-red-200"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox example"
+                                            class="checkbox border-blue-300 bg-blue-100 text-blue-600 checked:border-blue-600 checked:bg-blue-200"
+                                            type="checkbox"
+                                            checked="" />
+                                        <input
+                                            aria-label="Checkbox example"
+                                            class="checkbox border-blue-300 bg-linear-to-br from-blue-500 to-purple-500 [background-size:inherit] text-white checked:border-blue-500"
+                                            type="checkbox"
+                                            checked="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End: Layout - Content -->
+                </div>
+            </div>
+
+            <load src="partials/rightbar.html" />
+        </div>
+
+        <!--  End: Layout - Main -->
+
+        <script>
+            document.getElementById("indeterminate-checkbox").indeterminate = true
+            document.getElementById("indeterminate-checkbox-disabled").indeterminate = true
+        </script>
+
+        <load src="partials/footer.html" />
+    </body>
+</html>
